@@ -1,0 +1,331 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+*{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    Font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    text-align: center;
+    margin: 3em 0;
+}
+.text h1{
+    font-size: 2em;
+    font-weight: 200;
+    
+}
+.text h2{
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+.text p{
+    width: 35%;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: .95em;
+    line-height: 1.5;
+}
+.cards{
+    max-width: 1000px;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+}
+.card-cyan{
+    float: left;
+    width: 31%;
+    margin-top: 120px;
+    border: none;
+    height: 210px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 3px 15px hsl(229, 6%, 66%);
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card-column{
+    float: left;
+    width: 31%;
+    margin-left: 35px;
+}
+.card-blue{
+    float: right;
+    width: 31%;
+    margin-top: 120px;
+    border: none;
+    height: 210px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 3px 15px hsl(229, 6%, 66%);
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.card-red{
+    margin-bottom: 25px;
+    height: 210px;
+    border: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 3px 15px hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card-orange{
+    height: 210px;
+    border: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 3px 15px hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.img-wrapper{
+    align-self: flex-end;
+}
+img{
+    width: 100%;
+}
+.card-blue div p:first-of-type, 
+.card-cyan div p:first-of-type,
+.card-red div p:first-of-type,
+.karma{
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.19em;
+}
+.card-blue div p:last-of-type, 
+.card-cyan div p:last-of-type,
+.team,
+.karma ~p {
+    font-weight: 200;
+    font-size: .8em;
+    line-height: 1.6;
+}
+.card-orange div p:first-of-type {
+    color: red;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* medium display only */
+@media (min-width: 481px) and (max-width:768px) {
+    /* properties that only apply to tablets */
+    body {
+        overflow-y: scroll;
+    }
+    .main{
+        max-width: 768px;
+        width: 100%;
+        height: 100%;
+    }
+    .text h1{
+        font-size: 2.3em;
+        margin-bottom: .2em;
+    }
+    .text h2{
+        font-size: 2.3em;
+    }
+    .text p{
+        width: 85%;
+        font-size: 1.5em;
+    }
+    .cards{
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card-cyan{
+        float: none;
+        width: auto;
+        margin-top: 2px;
+        height: 250px;
+        padding: 50px;
+        margin-bottom: 25px;
+    }
+    .card-column{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card-blue{
+        float: none;
+        width: auto;
+        margin-top: 2px;
+        height: 250px;
+        padding: 50px;
+    }
+    .card-red{
+        float: none;
+        width: auto;
+        margin-top: 2px;
+        height: 250px;
+        padding: 50px;
+    }
+    .card-orange{
+        float: none;
+        width: auto;
+        margin-top: 2px;
+        height: 250px;
+        padding: 50px;
+        margin-bottom: 25px;
+    }
+    img{
+        width: 100%;
+    }
+    .card-blue div p:first-of-type, 
+    .card-cyan div p:first-of-type,
+    .card-red div p:first-of-type,
+    .karma{
+        font-size: 2em;
+    }
+    .card-blue div p:last-of-type, 
+    .card-cyan div p:last-of-type,
+    .team,
+    .karma ~p {
+        font-size: 1.5em;
+    }
+    footer{
+        margin: 50px 0;
+     }
+    }
+    /* small display only */
+    @media (min-width: 375px) and (max-width:480px) {
+        /* properties that only apply to phones */
+        body {
+            overflow-y: scroll;
+        }
+        .main{
+            min-width: 375px;
+            width: 100%;
+            height: 100%;
+        }
+        .text h1{
+            font-size: 1.7em;
+        }
+        .text h2{
+            font-size: 1.7em;
+        }
+        .text p{
+            font-size: 1.05em;
+            width: 80%;
+        }
+        .cards{
+            width: 83%;
+            margin: 0 auto;
+            height: auto;
+        }
+        .card-cyan{
+            float: none;
+            width: auto;
+            margin-top: 2px;
+            height: 210px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .card-column{
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .card-blue{
+            float: none;
+            width: auto;
+            margin-top: 2px;
+            height: 210px;
+            padding: 20px;
+        }
+        .card-red{
+            float: none;
+            width: auto;
+            margin-top: 2px;
+            height: 210px;
+            padding: 20px;
+        }
+        .card-orange{
+            float: none;
+            width: auto;
+            margin-top: 2px;
+            height: 210px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        img{
+            width: 70%;
+        }
+        .card-blue div p:first-of-type, 
+        .card-cyan div p:first-of-type,
+        .card-red div p:first-of-type,
+        .karma{
+            font-size: 1.5em;
+        }
+        .card-blue div p:last-of-type, 
+        .card-cyan div p:last-of-type,
+        .team,
+        .karma ~p {
+            font-size: .9em;
+        }
+        footer{
+            margin: 50px 0;
+         }
+        }
+    }
